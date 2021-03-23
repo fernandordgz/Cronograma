@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 body{
+    height: auto;
     background-color: #220044;
     color: #42b883;
 }
 main{
-    width: 95vw;
-    height: 140vh;
-    margin: 2%;
+    width: 93.5%;
+    height: 55em;
     padding: 2%;
+    margin: 3% 3%;
     background-color: rgb(4, 47, 112);
     border-radius: 15px;
     text-align: center;
@@ -19,7 +20,7 @@ main{
 h1{
     font-size: 350%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    border-radius: 15px;
+    border-radius: 250px;
     background: #220044;
     padding: 3% 0 3% 0;
 }
@@ -27,13 +28,13 @@ h1{
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
     grid-template-rows: 100px repeat(7, 1fr);
-    margin: 3% 1%;
+    margin: 3% 2%;
 }
 .task-head-day{
     font-size: 170%;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height:60px;
+    height: 60px;
 }
 .task-head{
     font-style: italic;
@@ -73,7 +74,6 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    margin: 0 3%;
     width: 95vw;
 }
 .cards{
@@ -83,7 +83,7 @@ section{
     color: #220044;
     border-radius: 15px;
     height: 95vh;
-    margin: 2%;
+    margin: 2% 3%;
 }
 .cards h2{
     font-size: 220%;
@@ -117,4 +117,18 @@ section{
     background-color: #0f9458;
     padding: 2%;
     border-radius: 10px;
+}
+@media (max-width: 600px){
+    .day, 
+    .task-head, 
+    .task-head-day{
+        font-size: 140%;
+    }
+    .tasks {
+        padding: 0 0 0 3% ;
+        font-size: 110%;
+    }
+    main{
+        height: 160vh;
+    }
 }
